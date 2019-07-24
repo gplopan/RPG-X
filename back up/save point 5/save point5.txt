@@ -1,0 +1,12 @@
+collectable items implemeted, they boost player stats
+monster exists and can move around the map: it moves until it gets blocked the changes direction 
+to a new random one. 
+save point exists on map, it is activated with S. it sends a signal to the board to save
+the level, player stats, monster stats and the power ups array on the map. 
+load button exits on home screen, sends a signal to board to read the file. the power up
+array is reconstructed with the items in the file
+save file is inserted into a data base savePoint-> can only save one state of the game so far
+map of the level 1 is nearly finished. power ups and save point have not been put to their
+final place. 
+no collisions implemented -> no way to hurt the player or monster
+no way to leave to level 2

@@ -1,0 +1,2 @@
+avoiding lava kind of works. problems at down towards lava and left when blocked in upper direction. 
+also going right is really fast for some reason

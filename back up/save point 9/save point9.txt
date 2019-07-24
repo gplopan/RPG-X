@@ -1,0 +1,28 @@
+leveling up still in the works. it is starting to shape up, although i am encountering the same issue
+as before, with the speeding up of the player and monster
+
+implemented reading the file configurations from the data base, that means level1, level2 have each a file
+and a column in the db. the structure of the file is:
+		level
+		player stats(x,y,health, power, speed, score, shield, inventory(loads collectable objects)
+		"enemy"
+		enemy no
+		enemy stats(filename, x, y, health, rockfile, sw, sh)
+		"collectables"
+		Map.loadPower : dinamically creates the powers array by reading from file and creating
+new collectable objects. This means that when loading a game, you can't collect twice an object
+		"interactable"
+		Map.loadInteractable: dinamically creates the interactable array by reading from file
+and creating new objects. this means that the objects that have been interacted will keep their state
+(interacted and the right image showing)
+
+issues in this saved version:
+		loading the next file: at first the levels merge and only after that the map changes. 
+speed is inceased twice for every load of the game, probably as a result of incorrect window management
+		congratulations screen: it appears once the game wants to load a level that doesn't exist.
+it will give the possibility to start over or load the last saved file, but those functions have issues.
+can only load once as far as i tested. 
+		when loading the next level, score and other stats reset to original values. 
+		movement "moonwalking" bug has not been fixedd. 
+		the indexoutofbounds error has been 
+patched with a simple try/catch block, but i still don't know how to fix it. 

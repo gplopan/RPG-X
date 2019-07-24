@@ -1,0 +1,4 @@
+movement ok
+map nearly finished -  lava and stone map
+overlay array implemented, altough tedious with individual item creation 
+	can improve by making arrays of coordinates for the same picture?

@@ -1,0 +1,19 @@
+collisons work: rectagle.intersects(rectangle)
+
+working on game over screen -> when the player dies the big screen closes and the small 
+greeting screen comes back up with the gameover text and option to load or start but
+the monster and the player work at double speed after loading or starting
+greeting , gameView and board are singleton in order not to open more than one window or 
+enter a loop of opening windows. 
+
+greeting loading function had a signal loaded that doesn't allow it to call the function 
+load() twice but that is not the issue with the double speed. thinking it is something related
+to the fact that it was not disposed properly or that because there are more than one window
+opened? this behaviour was also noticed when in trials for the game_over screen i managed to
+open two gameview with the map loaded. both windows showed the same image, but they worked
+at double speed if the player dies again, the speed triples in reference to the default and correct one. 
+
+should try to set the board to null before re-loading. i think that it takes every input twice, 
+once for the old one created in the beggining and the other for the new and visible window
+
+other ideas:???

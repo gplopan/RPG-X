@@ -1,0 +1,8 @@
+game over screen works. once the player dies, a game over greeting object appears and it
+gives the posibility to load the game or to start over. no speed issues after loading game again
+
+level 2 implementation is in progress. level 1 graphics are getting improved.
+
+this is before the implementation of loading all levels from SQLite db. there is no way to go from 
+level 1 to level 2 and there is no win screen
+the score, health and other stats are not shown on screen

@@ -1,0 +1,5 @@
+level 3 map done. minor adjustments to be done here and there on other levels
+
+score doesn't maintain after changing levels
+
+speed increseases after changing levels
